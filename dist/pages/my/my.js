@@ -36,14 +36,9 @@ var Index = (_temp2 = _class = function (_BaseComponent) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Index.__proto__ || Object.getPrototypeOf(Index)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = ["$compid__0", "$compid__1", "$compid__2", "$compid__3", "$compid__4"], _this.config = {
-      navigationBarTitleText: "首页"
-    }, _this.handleClick = function (type) {
-      _index2.default.atMessage({
-        message: "消息通知",
-        type: type
-      });
-    }, _this.customComponents = ["AtIcon", "AtMessage", "AtButton"], _temp), _possibleConstructorReturn(_this, _ret);
+    return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref = Index.__proto__ || Object.getPrototypeOf(Index)).call.apply(_ref, [this].concat(args))), _this), _this.$usedState = [], _this.config = {
+      navigationBarTitleText: '我的'
+    }, _this.customComponents = [], _temp), _possibleConstructorReturn(_this, _ret);
   }
 
   _createClass(Index, [{
@@ -77,76 +72,18 @@ var Index = (_temp2 = _class = function (_BaseComponent) {
   }, {
     key: "_createData",
     value: function _createData() {
-      var _this2 = this;
-
       this.__state = arguments[0] || this.state || {};
       this.__props = arguments[1] || this.props || {};
       var __isRunloopRef = arguments[2];
       var __prefix = this.$prefix;
       ;
-      var $compid__0 = (0, _index.genCompid)(__prefix + "$compid__0");
-      var $compid__1 = (0, _index.genCompid)(__prefix + "$compid__1");
-      var $compid__2 = (0, _index.genCompid)(__prefix + "$compid__2");
-      var $compid__3 = (0, _index.genCompid)(__prefix + "$compid__3");
-      var $compid__4 = (0, _index.genCompid)(__prefix + "$compid__4");
-
-      this.anonymousFunc0 = function () {
-        return _this2.handleClick("success");
-      };
-
-      this.anonymousFunc1 = function () {
-        return _this2.handleClick("error");
-      };
-
-      this.anonymousFunc2 = function () {
-        return _this2.handleClick("warning");
-      };
-
-      _index.propsManager.set({
-        "value": "clock",
-        "size": "30",
-        "color": "#F00"
-      }, $compid__0);
-      _index.propsManager.set({
-        "onClick": this.handleClick
-      }, $compid__1);
-      _index.propsManager.set({
-        "onClick": this.anonymousFunc0
-      }, $compid__2);
-      _index.propsManager.set({
-        "onClick": this.anonymousFunc1
-      }, $compid__3);
-      _index.propsManager.set({
-        "onClick": this.anonymousFunc2
-      }, $compid__4);
-      Object.assign(this.__state, {
-        $compid__0: $compid__0,
-        $compid__1: $compid__1,
-        $compid__2: $compid__2,
-        $compid__3: $compid__3,
-        $compid__4: $compid__4
-      });
+      Object.assign(this.__state, {});
       return this.__state;
-    }
-  }, {
-    key: "anonymousFunc0",
-    value: function anonymousFunc0(e) {
-      ;
-    }
-  }, {
-    key: "anonymousFunc1",
-    value: function anonymousFunc1(e) {
-      ;
-    }
-  }, {
-    key: "anonymousFunc2",
-    value: function anonymousFunc2(e) {
-      ;
     }
   }]);
 
   return Index;
-}(_index.Component), _class.$$events = [], _class.$$componentPath = "pages/index/index", _temp2);
+}(_index.Component), _class.$$events = [], _class.$$componentPath = "pages/my/my", _temp2);
 exports.default = Index;
 
 Component(require('../../npm/@tarojs/taro-weapp/index.js').default.createComponent(Index, true));

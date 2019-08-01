@@ -1,4 +1,23 @@
 <block wx:if="{{$taroCompReady}}">
-    <view class="index"><text>Hello world!</text>
+    <view class="index">
+        <swiper class="test-h" indicator-color="#ccc" indicator-active-color="#C81C3A" circular="{{true}}" indicator-dots="{{true}}" autoplay="{{true}}">
+            <swiper-item>
+                <view class="demo-text-1">1</view>
+            </swiper-item>
+            <swiper-item>
+                <view class="demo-text-2">2</view>
+            </swiper-item>
+            <swiper-item>
+                <view class="demo-text-3">3</view>
+            </swiper-item>
+        </swiper>
+        <view>
+            <at-icon compid="{{$compid__0}}"></at-icon>
+            <at-message></at-message>
+            <at-button compid="{{$compid__1}}">普通消息</at-button>
+            <at-button compid="{{$compid__2}}">成功消息</at-button>
+            <at-button compid="{{$compid__3}}">错误消息</at-button>
+            <at-button compid="{{$compid__4}}">警告消息</at-button>
+        </view>
     </view>
 </block>

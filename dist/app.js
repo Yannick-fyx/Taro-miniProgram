@@ -39,12 +39,24 @@ var _App = function (_BaseComponent) {
     var _this = _possibleConstructorReturn(this, (_App.__proto__ || Object.getPrototypeOf(_App)).apply(this, arguments));
 
     _this.config = {
-      pages: ['pages/index/index'],
+      pages: ['pages/index/index', 'pages/cart/cart', 'pages/my/my'],
       window: {
         backgroundTextStyle: 'light',
-        navigationBarBackgroundColor: '#fff',
+        navigationBarBackgroundColor: '#C81C3A',
         navigationBarTitleText: 'WeChat',
-        navigationBarTextStyle: 'black'
+        navigationBarTextStyle: 'white'
+      },
+      tabBar: {
+        list: [{
+          pagePath: 'pages/index/index',
+          text: 'Home'
+        }, {
+          pagePath: 'pages/cart/cart',
+          text: '购物车'
+        }, {
+          pagePath: 'pages/my/my',
+          text: '我的'
+        }]
       }
     };
     return _this;

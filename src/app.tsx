@@ -1,6 +1,5 @@
 import Taro, { Component, Config } from '@tarojs/taro'
 import Index from './pages/index'
-
 import './app.scss'
 
 // 如果需要在 h5 环境中开启 React Devtools
@@ -20,13 +19,31 @@ class App extends Component {
    */
   config: Config = {
     pages: [
-      'pages/index/index'
+      'pages/index/index',
+      'pages/cart/cart',
+      'pages/my/my'
     ],
     window: {
       backgroundTextStyle: 'light',
-      navigationBarBackgroundColor: '#fff',
+      navigationBarBackgroundColor: '#C81C3A',
       navigationBarTitleText: 'WeChat',
-      navigationBarTextStyle: 'black'
+      navigationBarTextStyle: 'white'
+    },
+    tabBar:{
+      list:[
+        {
+          pagePath:'pages/index/index',
+          text:'Home'
+        },
+        {
+          pagePath:'pages/cart/cart',
+          text:'购物车'
+        },
+        {
+          pagePath:'pages/my/my',
+          text:'我的'
+        },
+      ]
     }
   }
 
